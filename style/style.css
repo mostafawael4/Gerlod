@@ -1,0 +1,538 @@
+:root {
+  --white: white;
+  --font: Sora, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f0715;
+  font-family: var(--font);
+  
+}
+a{
+  text-decoration: none;
+}
+/* this is nav section */
+
+nav{
+  color: white;
+  width: 100%;
+  overflow: hidden;
+}
+nav .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* margin: 30px 0; */
+  background-color: #0f0715;
+  height: fit-content;
+  /* background-color: red; */
+  position: fixed;
+  z-index: 999;
+  /* top: -10px; */
+  padding: 5px 0;
+  
+}
+nav .container .nav-logo{
+  width: 70px;
+  /* background-color: teal; */
+  cursor: pointer;
+}
+nav .container .nav-logo img{
+  width: 100%;
+
+}
+nav .container  .mail{
+  font-size: 20px;
+  transition: all 0.5s;
+}
+nav .container .links ul{
+  padding: 0;
+}
+nav .container .links ul li{
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+nav .container .buttons button{
+  background-image: linear-gradient(to right, #8750f7, white);
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+nav .container .buttons i{
+  font-size: 25px;
+  display: none;
+}
+
+nav .container  .mail:hover{
+  color: #8750f7;
+  cursor: pointer;
+}
+nav .container .links ul li::after
+{
+  content: "";
+  position: absolute;
+  left:0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #5e33a4;
+  transition: width .3s ease-in-out;
+}
+
+nav .container .links ul li:hover{
+  cursor: pointer;
+}
+
+nav .container .buttons button:hover{
+  background-image: linear-gradient(to right, white, #8750f7);
+  cursor: pointer;
+}
+nav .container .buttons i:hover{
+  cursor: pointer;
+}
+
+
+
+
+/* this is first section */
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+main .content {
+  width: 40%;
+}
+
+main .content p {
+  font-size: 36px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+main .content h1 {
+  font-size: 65px;
+  background-image: linear-gradient(to right, #8750f7, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+main .content .text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+main .download-btn .b {
+  font-size: 15px;
+  font-weight: 500;
+  color: #8750f7;
+  background-color: transparent;
+  padding: 17px 35px;
+  border-radius: 50px;
+  border: 1px solid;
+  transition: all 0.5s;
+}
+main .download-btn .b:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: #8750f7;
+}
+
+main .download-btn span {
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+.fa-twitter {
+  transition: all 0.5s;
+}
+.fa-globe {
+  transition: all 0.5s;
+}
+.fa-linkedin-in {
+  transition: all 0.5s;
+}
+.fa-github {
+  transition: all 0.5s;
+}
+main .download-btn span:hover {
+  background-color: #8750f7;
+  cursor: pointer;
+  .fa-twitter {
+    color: white;
+  }
+  .fa-globe {
+    color: white;
+  }
+  .fa-linkedin-in {
+    color: white;
+  }
+  .fa-github {
+    color: white;
+  }
+}
+main .image {
+  width: 40%;
+  /* min-height: 600px; */
+  /* margin-left: 60px; */
+}
+.image .img-con {
+  transform: rotate(4.29deg);
+  margin: 20px 0 0 50px;
+  border: 2px solid #2a1454;
+  width: 440px;
+  border-radius: 8%;
+  transition: all 0.5s;
+}
+.image .img-con img {
+  width: 100%;
+}
+.image .img-con:hover {
+  transform: rotate(0deg);
+  border-color: #8750f7;
+}
+
+/* this is counter section */
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* background-color: red; */
+  margin-top: 20px;
+  
+}
+.counter .f-c {
+  color: white;
+  width: 15%;
+}
+.counter .f-c h2 {
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 900;
+}
+.counter .f-c p {
+  display: inline-block;
+}
+
+
+/* this is work section */
+
+.work {
+  margin-top: 100px;
+}
+.work .title {
+  text-align: center;
+  color: white;
+}
+.work .title h2 {
+  font-size: 45px;
+  background-image: linear-gradient(to right, #8750f7, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  margin-bottom: -5px;
+}
+.work .link {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 20px;
+}
+.work .link ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.work .link ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.work .link ul li.f {
+  background-image: linear-gradient(to right, #8750f7, white);
+  border-radius: 20px;
+}
+.work .link ul li:hover {
+  cursor: pointer;
+}
+.work .imgs {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.work .imgs .img-con {
+  background-color: #140c1c;
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+}
+.work .imgs .im {
+  margin: 50px 50px 0 50px;
+}
+.work .imgs .im img {
+  width: 100%;
+}
+.imgs .img-con .hover {
+  color: white;
+  background-image: linear-gradient(to right, #8750f7, #2a1454);
+  border-radius: 20px;
+  padding: 5px 30px;
+  position: absolute;
+  bottom: -170px;
+  transition: all 0.3s;
+  margin-left: 30px;
+  width: 80%;
+}
+.hover h2 {
+  font-size: 30px;
+}
+.hover p{
+  margin-top: -20px;
+}
+.hover .cont {
+  display: inline-block;
+  /* background-color: red; */
+  vertical-align: middle;
+  width: fit-content;
+}
+.hover .icon {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 100px;
+  transform: rotate(-360deg);
+  transition-delay: 1s;
+  transition: all 1s;
+  vertical-align: middle;
+  /* text-align: right; */
+}
+.imgs .img-con:hover .hover {
+  bottom: 10;
+  cursor: pointer;
+}
+.imgs .img-con:hover .icon {
+  transform: rotate(45deg);
+}
+.tftf {
+  margin-right: 70px;
+}
+
+/* this is skill section */
+
+.skill {
+  margin-top: 100px;
+  color: white;
+}
+.skill .title {
+  color: white;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.skill .title h2 {
+  background-image: linear-gradient(to right, #8750f7, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+  margin-bottom: -5px;
+  font-size: 45px;
+}
+
+.skill .iconss{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skill .iconss .big{
+  width: calc(100%/7);
+  margin: 10px 10px 0 0 ;
+  /* background-color: blue; */
+  text-align: center;
+  /* margin: auto; */
+}
+.skill .iconss .big .inner{
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all 0.5s;
+  margin: auto;
+}
+.skill .iconss .big .inner .icon{
+  margin: auto;
+  width: fit-content;
+  margin-top: 50px;
+  font-size: 50px;
+  transition: all 0.5s;
+}
+.skill .iconss .big .inner .con{
+  width: fit-content;
+  margin: auto;
+  font-size: 30px;
+  color: white;
+}
+.skill .iconss .big p{
+  font-size: 20px;
+  text-align: center;
+}
+.ss{
+   color: #5e33a4;
+}
+
+.skill .iconss .big:hover .inner{
+  background-color: #8750f7;
+}
+.skill .iconss .big:hover .icon{
+  color: orange;
+  transform: scale(1.5);
+}
+
+
+
+/* this is from section */
+.fd {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.fd .form{
+  background-color: #140c1c;
+  width: 30%;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 10px;
+  min-height: 100%;
+}
+.fd .form h2{
+  font-size: 40px;
+  background-image: linear-gradient(to right, #8750f7, white);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;  
+}
+input{
+  width: 48%;
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  margin: 15px 5px 0 0;
+}
+select{
+  width: 97%;
+  padding: 10px 20px ;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 15px 5px 0 0;
+  background-color: black;
+  color: white;
+}
+option{
+  background-color: white;
+  /* color: white; */
+  color: black;
+}
+textarea{
+  padding: 10px 20px;
+  background-color: black;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: white;
+}
+form button{
+  padding: 20px 40px;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #8750f7, white);
+  transition: all 1s;
+}
+form button:hover{
+  background-image: linear-gradient(to right,white, #8750f7);
+  cursor: pointer;
+}
+.fd .contact
+{
+  width: 30%;
+  margin-right: 150px;
+  margin-top: 170px;
+  /* background-color:  red; */
+}
+.ff{
+  display: flex;
+}
+.fd .contact .f-icon{
+  width: 50px;
+  height: 50px;
+  background-image: linear-gradient(to right, #8750f7, white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 15px;
+  color: white;
+}
+.number{
+  font-size: 20px;
+  margin-top: -10px;
+  transition: all 0.98s;
+  font-weight: 600;
+}
+.info{
+  color: white;
+}
+.number:hover{
+  color: #8750f7;
+  cursor: pointer;
+}
+footer{
+  background-color: #161218;;
+  /* height: 300px; */
+  margin-top: 50px;
+  padding: 20px 0 20px 0;
+}
+footer .logo{
+  width: 5%;
+  margin: auto;
+}
+footer .logo img{
+  width: 100%;
+}
+footer p{
+  color: #3d1283;
+  /* margin: auto; */
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+footer p span{
+  cursor: pointer;
+}
+.arrow{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  z-index: 9999;
+}
+
+footer .logo:hover{
+  cursor: pointer ;
+}
+

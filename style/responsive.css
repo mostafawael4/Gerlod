@@ -1,0 +1,207 @@
+@media only screen and (max-width: 1000px) {
+  nav .container .buttons i{
+    display: inline-block;
+  }
+  nav .container .links{
+    display: none;
+  }
+  nav .container  .mail{
+    margin-left: -150px;
+  }
+  main .content{
+    width: 35%;
+  }
+  main .content h1 {
+  font-size: 40px;
+}
+main .content .text {
+  font-size: 15px;
+  line-height: 25px;
+}
+main .download-btn .b{
+  display: block;
+  margin-bottom: 20px;
+}
+.image .img-con {
+  width: 350px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.counter {
+  justify-content: center;
+  text-align: center;
+  
+}
+.counter .f-c {
+  width: 35%;
+}   
+
+.work .imgs{
+  justify-content: center;
+}
+.work .imgs .img-con{
+  width: 35%;
+  margin-right: 10px;
+}
+.work .imgs .im {
+  margin: 20px 20px 0 20px;
+}
+.hover h2 {
+  font-size: 15px;
+}
+
+.hover .icon {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.hover p{
+  font-size: 10px;
+  margin-top: 0;
+}
+
+.imgs .img-con .hover {
+  color: white;
+  background-image: linear-gradient(to right, #8750f7, #2a1454);
+  border-radius: 20px;
+  padding: 5px 30px;
+  position: absolute;
+  bottom: -170px;
+  transition: all 0.3s;
+  margin-left: 30px;
+  width: 70%;
+}
+.hover .cont {
+  width: 130px ;
+}
+
+
+
+.skill .iconss .big{
+  width: 25%;
+}
+.skill .iconss .big .inner{
+  width: 100%;
+}
+
+
+
+.fd {
+justify-content: center;
+  align-items: center;
+}
+.fd .form{
+  width: 35%;
+  /* margin-left: 100px; */
+  margin-right: 20px;
+
+}
+.fd .contact
+{
+  width: fit-content;
+  margin-right: 0;
+}
+input{
+  width: 47%;
+}
+}
+@media only screen and (max-width: 600px)
+{
+  nav .container  .mail{
+  display: none;
+}
+main {
+  justify-content: center;
+  align-items: center ;
+}
+main .content {
+  width: 80%;
+  /* background-color: red; */
+  order: 2;
+}
+main .content .text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  /* background-color: teal; */
+}
+main .download-btn span {
+  transition: all 0.5s;
+}
+
+main .image {
+  width: 100%;
+}
+
+.image .img-con {
+  width: 80%;
+  margin-right: 0px;
+}
+.counter {
+  justify-content: space-around;
+  
+}
+
+.counter .f-c h2 {
+  font-size: 25px;
+}
+
+
+.work .imgs {
+  justify-content: center;
+}
+.work .imgs .img-con {
+  width: 100%;
+}
+
+.imgs .img-con .hover {
+  width: 70%;
+}
+.hover h2 {
+  font-size: 30px;
+}
+.hover p{
+  margin-top: -20px;
+  font-size: 15px;
+}
+
+.hover .icon {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.hover .cont {
+  width: 70%;
+}
+
+.imgs .img-con .hover {
+  bottom: -190px;
+}
+.skill .iconss .big{
+  width:40%;
+}
+
+.fd {
+  justify-content: center;
+}
+.fd .form{
+  width: 100%;
+  order: 2;
+  margin-top: 10px;
+}
+input{
+  width: 98%;
+}
+.fd .contact
+{
+  width: 100%;
+  order: 1;
+  margin-top: 0px;
+}
+
+footer .logo{
+  width: 10%;
+  margin: auto;
+}
+}
